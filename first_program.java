@@ -2,7 +2,7 @@
 // keywords..
 
 // int, float, double byte short long [number data types]
-// char, String 
+// char,   String[]
 
 class Add2                 // class definition..
 {
