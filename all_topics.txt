@@ -1,0 +1,7 @@
+Basic C program,
+Basic Java program,
+IF, else statement,
+loops,
+nested loops,
+arrays, linear search,
+OOPs concepts,
