@@ -4,4 +4,6 @@ IF, else statement,
 loops,
 nested loops,
 arrays, linear search,
-OOPs concepts,
+OOPs concepts (theory),
+constructors
+ArrayList, Collections
