@@ -24,7 +24,7 @@ class Array_sample {
             System.out.print(" "+result.get(i));
     }
     public static void main(String[] args) {
-        int[] ar = {5,3,7,4,9,6,1};        
+        int[] ar = {5,3,7,4,9,6,1};      
         int length = ar.length;
         for(int i=0;i<length-1;i++)
         {
