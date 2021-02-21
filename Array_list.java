@@ -16,6 +16,7 @@ class Array_list{
         Collections.sort(ar);
         System.out.println("The array you sorted is ");
         for(int i =0;i<ar.size();i++)
-            System.out.println(ar.get(i));        
+            System.out.println(ar.get(i));    
+        System.out.println("The maximum of array is "+Collections.max(ar)); 
     }
 }
