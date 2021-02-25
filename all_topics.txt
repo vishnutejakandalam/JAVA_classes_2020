@@ -3,7 +3,10 @@ Basic Java program,
 IF, else statement,
 loops,
 nested loops,
-arrays, linear search,
+arrays, linear search, binary search,
 OOPs concepts (theory),
 constructors
 ArrayList, Collections
+Inheritance, super, this
+Packages
+
