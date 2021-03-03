@@ -1,12 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Student ravi = new Student("Ravi",101);
-        Student ramesh = new Student("Ramesh",102);
-        ravi.wakeup();
-        ravi.play();
-        ramesh.wakeup();
-        ramesh.play();
-        System.out.println("Roll number of "+ravi.name+" is "+ravi.rollno);
-        System.out.println("Roll number of "+ramesh.name+" is "+ramesh.rollno);
+        Sum s1 = new Sum(10,20,30);
+        System.out.println("the sum of 3 number is "+s1.sum());
     }
 }

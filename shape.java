@@ -20,6 +20,10 @@ class Shape
 {
     int sides;
     String name;
+    Shape()
+    {
+        System.out.println("Default constructor");
+    }
     Shape(String n)
     {
         name = n;
