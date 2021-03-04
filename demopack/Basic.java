@@ -6,7 +6,7 @@ class Basic {
         coins = coins + 1;
         display();
     }
-    private void display()
+    void display()
     {
         System.out.println("THe value is "+coins);
     }

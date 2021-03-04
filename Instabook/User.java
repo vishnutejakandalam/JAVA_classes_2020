@@ -1,5 +1,8 @@
+package Instabook;
+
 public class User {
     private String name;
+    private String email;
     private String user_name;
     private String password;
     private String dob;
@@ -14,14 +17,17 @@ public class User {
             this.bio = value;
         if(key.compareTo("user_name") == 0)
             this.user_name = value;
+        if(key.compareTo("email") == 0)
+            this.user_name = value;
     }
-    User(String name, String user_name,String dob, String bio,String password)
+    User(String name, String user_name,String dob, String bio,String password,String email)
     {
         this.name = name;
         this.user_name = user_name;
         this.dob = dob;
         this.bio = bio;
         this.password = password;
+        this.email = email;
     }
     String getName()
     {
@@ -30,6 +36,10 @@ public class User {
     String getDob()
     {
         return dob;
+    }
+    void setDob(String dob)
+    {
+        this.dob = dob;
     }
     String getUser_name()
     {
