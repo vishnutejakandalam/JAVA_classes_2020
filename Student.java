@@ -1,23 +1,40 @@
-public class Student {
-    int rollno;           //properties or variables
+class Child 
+{
     String name;
+    float height;
+    int age;
+    void eat(String food)
+    {
+        System.out.println("Child eats "+food);
+    }
+    void play()
+    {
+        System.out.println("Child is playing");
+    }
+}
+
+class Student extends Child {
+    int std;
     int marks;
-    static int std = 6;
-    Student(String name, int rollno) //constructor
+    String school_name;
+    int rollno;
+    void study()
     {
-        this.name = name;
-        this.rollno = rollno;
+        System.out.println("Student studies");
     }
-    void wakeup()       //methods
-    {
-        System.out.println(name+" woke up");
-    }
-    void play()            //methods
-    {
-        System.out.println(name+" is playing");
-    }
-    static 
-    {
-        System.out.println("This is a direct static block");
+}
+
+class Main 
+{
+    public static void main(String[] args) {
+        Student obj = new Student();
+        obj.std = 10;
+        obj.marks = 100;
+        obj.rollno = 20;
+        System.out.println(obj.rollno);
+        Student xyz = obj;
+        System.out.println(xyz.rollno);
+        obj.rollno = 30;
+        System.out.println("After changing obj rollno "+xyz.rollno);
     }
 }

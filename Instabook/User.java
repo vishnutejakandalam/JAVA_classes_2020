@@ -11,13 +11,13 @@ public class User {
     {
         if(key.compareTo("name") == 0)
             this.name = value;
-        if(key.compareTo("dob") == 0)
+        else if(key.compareTo("dob") == 0)
             this.dob = value;
-        if(key.compareTo("bio") == 0)
+        else if(key.compareTo("bio") == 0)
             this.bio = value;
-        if(key.compareTo("user_name") == 0)
+        else if(key.compareTo("user_name") == 0)
             this.user_name = value;
-        if(key.compareTo("email") == 0)
+        else if(key.compareTo("email") == 0)
             this.user_name = value;
     }
     User(String name, String user_name,String dob, String bio,String password,String email)

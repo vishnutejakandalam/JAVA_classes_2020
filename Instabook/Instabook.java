@@ -21,7 +21,6 @@ public class Instabook
         Scanner sc = new Scanner(System.in);
         while(true)
         {
-
             System.out.println("1.Login\n2.Create Account\n3. Exit");
             int choice = sc.nextInt();
             switch(choice)
