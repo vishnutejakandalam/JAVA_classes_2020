@@ -1,40 +1,50 @@
-class Child 
-{
-    String name;
-    float height;
-    int age;
-    void eat(String food)
-    {
-        System.out.println("Child eats "+food);
-    }
-    void play()
-    {
-        System.out.println("Child is playing");
-    }
-}
+import java.util.ArrayList;
 
-class Student extends Child {
-    int std;
-    int marks;
-    String school_name;
-    int rollno;
+class Student  {
+    String name;
+    int age;
     void study()
     {
         System.out.println("Student studies");
     }
 }
 
+class Cstudent extends Student{
+    String college_name;
+    String branch;
+    int semister;
+    void lab()
+    {
+        System.out.println("going to Lab");
+    }
+    void study()
+    {
+        System.out.println("going to colllege");
+    }
+}
+
+class Sstudent extends Student{
+    String school_name;
+    int std;
+    int marks;
+    void play()
+    {
+        System.out.println("going to play");
+    }
+    void study()
+    {
+        System.out.println("Go to school");
+    }
+}
+
 class Main 
 {
     public static void main(String[] args) {
-        Student obj = new Student();
-        obj.std = 10;
-        obj.marks = 100;
-        obj.rollno = 20;
-        System.out.println(obj.rollno);
-        Student xyz = obj;
-        System.out.println(xyz.rollno);
-        obj.rollno = 30;
-        System.out.println("After changing obj rollno "+xyz.rollno);
+        ArrayList stdlist = new ArrayList<Student>();
+        Student std = new Sstudent();
+        Cstudent cstd = new Cstudent();
+        std.study();   // school student
+        std = cstd;
+        std.study();    // college student
     }
 }
