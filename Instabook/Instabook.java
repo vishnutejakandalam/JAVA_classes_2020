@@ -1,22 +1,9 @@
-package Instabook;
-
 import java.util.Scanner;
 
 public class Instabook
 {
-    static boolean validate()
-    {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter username to login");
-        String user = sc.nextLine();
-        System.out.println("Enter password to login");
-        String password = sc.nextLine();    
-        if(user.compareTo("asdf")==0 && password.compareTo(";lkj")==0)
-            return true;
-        else
-            return false;
-    }
-    static void main_page()
+   
+    static void main_page(User_manage um)
     {
         Scanner sc = new Scanner(System.in);
         while(true)
@@ -26,7 +13,7 @@ public class Instabook
             switch(choice)
             {
                 case 1:
-                    if(validate())
+                    if(um.validate())
                     {
                         System.out.println("1.Search\n2.Edit Profile\n3.Logout");
                         int ch1 = sc.nextInt();
@@ -41,17 +28,15 @@ public class Instabook
                                 System.out.println("Hello ");
                                 break;
                             case 3:
-                                main_page();
+                                main_page(um);
                         }
                     }
                     else
                         System.out.println("Bad Login");
                     break;
                 case 2:
-                    String nmae = sc.next();
-                    String password = sc.next();
-                    main_page();
-                    break;
+                    um.create_user();
+                    main_page(um);
                     // save to object 
                 case 3:
                     System.exit(0);
@@ -62,6 +47,7 @@ public class Instabook
         }
 }
     public static void main(String[] args) {
-        main_page();
+        User_manage um = new User_manage();
+        main_page(um);
       }
 }

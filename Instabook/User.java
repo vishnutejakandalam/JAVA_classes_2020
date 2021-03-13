@@ -1,5 +1,3 @@
-package Instabook;
-
 public class User {
     private String name;
     private String email;
@@ -28,6 +26,14 @@ public class User {
         this.bio = bio;
         this.password = password;
         this.email = email;
+    }
+    String getEmail()
+    {
+        return email;
+    }
+    String getPassword()
+    {
+        return this.password;
     }
     String getName()
     {
